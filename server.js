@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 8080;
-const DIR = 'e:\\onedrive\\vaccumflask\\website';
+const DIR = 'e:\\onedrive\\vaccumflask\\website\\public';
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
