@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stainless Steel Vacuum Jug Model 94 (9420) - 2.0L to 3.0L | BaoAo Manufacturer</title>
-  <meta name="description" content="Model 94 Vacuum Jug - 2.0L / 3.0L Vacuum Jug. Professional stainless steel vacuum flask and airpot manufacturer. OEM/ODM service available.">
+  <meta name="description" content="Stainless steel vacuum jug with double-wall vacuum insulation and ergonomic handle. 304 food-grade stainless steel. Twist-and-pour stopper. OEM/ODM available. LFGB/FDA certified.">
   <link rel="canonical" href="https://www.vacuumairpot.com/products/stainless-steel-vacuum-jug-9420/">
   <meta property="og:type" content="product">
   <meta property="og:title" content="Stainless Steel Vacuum Jug Model 94 (9420) - 2.0L to 3.0L | BaoAo">
@@ -71,7 +71,7 @@
     }
     .back-link:hover { color: var(--blue-hover); text-decoration: underline; }
 
-    .product-detail { padding: 100px 0 60px; background: var(--bg-white); }
+    .product-detail { padding: 100px 0 60px; background: linear-gradient(180deg, var(--bg-gray) 0%, var(--bg-white) 40%); }
     .product-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 
     .carousel-wrapper { position: relative; }
@@ -88,7 +88,9 @@
     }
     .carousel-slide img {
       width: 100%; height: 100%; object-fit: contain; padding: 32px;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
+    .carousel-slide:hover img { transform: scale(1.05); }
     .carousel-btn {
       position: absolute; top: 50%; transform: translateY(-50%);
       width: 40px; height: 40px; border-radius: 50%;
@@ -124,25 +126,28 @@
       font-size: 21px; color: var(--text-secondary); line-height: 1.5;
       font-weight: 300; margin-bottom: 32px;
     }
-    .product-specs {
-      background: var(--bg-gray); border-radius: var(--radius-md); padding: 28px;
+    .product-capacities {
+      margin-bottom: 20px;
     }
-    .product-specs h3 {
-      font-size: 13px; font-weight: 600; color: var(--text-tertiary);
-      letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 16px;
+    .capacity-values {
+      font-size: 20px; font-weight: 600; color: var(--text-primary);
+      letter-spacing: -0.02em;
     }
-    .spec-list { list-style: none; }
-    .spec-list li {
-      display: flex; align-items: center; gap: 12px;
-      padding: 12px 0; border-bottom: 1px solid var(--border-light);
-      font-size: 15px; color: var(--text-primary);
+    .product-cta { margin-top: 28px; }
+    .btn-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; border-radius: 980px;
+      font-size: 16px; font-weight: 600; text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: pointer; border: none; font-family: inherit;
+      background: var(--blue); color: #fff;
+      box-shadow: 0 4px 14px rgba(0,113,227,0.3);
     }
-    .spec-list li:last-child { border-bottom: none; }
-    .spec-list li::before {
-      content: ''; width: 6px; height: 6px; border-radius: 50%;
-      background: var(--blue); flex-shrink: 0;
+    .btn-cta:hover {
+      background: var(--blue-hover); transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,113,227,0.4);
     }
-    .product-cta { margin-top: 32px; }
+    .btn-cta:active { transform: translateY(0); }
     .btn-apple {
       display: inline-flex; align-items: center; gap: 6px; padding: 12px 28px; border-radius: 980px;
       font-size: 15px; font-weight: 500; text-decoration: none; transition: all 0.3s;
@@ -157,18 +162,37 @@
     .section-headline { font-size: clamp(32px, 5vw, 56px); font-weight: 700; color: var(--text-primary); letter-spacing: -0.03em; line-height: 1.08; margin-bottom: 16px; }
     .section-subhead { font-size: 19px; color: var(--text-secondary); line-height: 1.5; max-width: 600px; font-weight: 300; }
     .detail-section .section-subhead { margin: 0 auto; }
-    .detail-images { display: flex; flex-direction: column; gap: 24px; }
+    .detail-images { display: grid; gap: 24px; }
+    .detail-images.cols-1 { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+    .detail-images.cols-2 { grid-template-columns: 1fr 1fr; }
+    .detail-images.cols-3 { grid-template-columns: 1fr 1fr; }
+    .detail-images.cols-3 .detail-img-wrap:first-child { grid-column: 1 / -1; }
     .detail-img-wrap {
       border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-gray);
     }
     .detail-img-wrap img {
       width: 100%; display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
+    .detail-img-wrap:hover img { transform: scale(1.03); }
     .fade-in {
       opacity: 0; transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .product-info > * {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .product-info.visible > * { opacity: 1; transform: translateY(0); }
+    .product-info.visible > *:nth-child(1) { transition-delay: 0s; }
+    .product-info.visible > *:nth-child(2) { transition-delay: 0.05s; }
+    .product-info.visible > *:nth-child(3) { transition-delay: 0.1s; }
+    .product-info.visible > *:nth-child(4) { transition-delay: 0.15s; }
+    .product-info.visible > *:nth-child(5) { transition-delay: 0.2s; }
+    .product-info.visible > *:nth-child(6) { transition-delay: 0.25s; }
+    .product-info.visible > *:nth-child(7) { transition-delay: 0.3s; }
+    .product-info.visible > *:nth-child(8) { transition-delay: 0.35s; }
 
     footer { background: var(--bg-gray); padding: 48px 0; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
@@ -179,11 +203,47 @@
     .footer-col a:hover { color: var(--text-primary); }
     .footer-bottom { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border-light); text-align: center; font-size: 12px; color: var(--text-tertiary); }
 
+    .product-description {
+      font-size: 15px; color: var(--text-secondary); line-height: 1.7;
+      margin-bottom: 24px; max-width: 480px;
+    }
+    .product-features {
+      margin-top: 24px; margin-bottom: 24px;
+    }
+    .product-features h3 {
+      font-size: 13px; font-weight: 600; color: var(--text-tertiary);
+      letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .detail-section .product-features {
+      max-width: 800px; margin: 48px auto 0;
+    }
+    .feature-list {
+      list-style: none;
+    }
+    .feature-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px 12px; font-size: 14px; color: var(--text-secondary); line-height: 1.5;
+      border-radius: 10px; transition: all 0.25s ease; cursor: default;
+    }
+    .feature-list li:hover {
+      background: var(--bg-gray); transform: translateX(4px);
+    }
+    .feature-list li::before {
+      content: '\2713'; color: var(--blue); font-weight: 600; flex-shrink: 0; margin-top: 1px;
+    }
+
     @media (max-width: 768px) {
       nav { display: none; }
       .product-detail { padding: 80px 0 40px; }
       .product-layout { grid-template-columns: 1fr; gap: 40px; }
+      .product-model { font-size: 28px; }
+      .product-name { font-size: 17px; margin-bottom: 20px; }
+      .product-description { font-size: 14px; }
+      .feature-list li { font-size: 13px; padding: 8px 10px; }
+      .btn-cta { width: 100%; justify-content: center; padding: 14px 24px; }
       .detail-section { padding: 60px 0 80px; }
+      .detail-images.cols-2, .detail-images.cols-3 { grid-template-columns: 1fr; }
+      .detail-images.cols-3 .detail-img-wrap:first-child { grid-column: auto; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
     }
     .contact-card {
@@ -315,10 +375,13 @@
         </div>
       </div>
       <div class="product-info fade-in">
+        <div class="product-category">Stainless Steel Vacuum Jug</div>
         <h1 class="product-model">Model 94</h1>
-        <div class="product-specs">
-          <h3>Available Capacities</h3>
-          <ul class="spec-list" id="specList"></ul>
+        <div class="product-capacities"><span class="capacity-values" id="capacityValues"></span></div>
+        <div class="product-name">Double-Wall Vacuum Insulated Jug with Ergonomic Handle</div>
+        <div class="product-description">Premium stainless steel vacuum jug featuring double-wall vacuum insulation and ergonomic handle design. The twist-and-pour stopper enables smooth, controlled pouring without splashing. Built with 304 food-grade stainless steel for reliable temperature retention and corrosion resistance.</div>
+        <div class="product-cta">
+          <a href="mailto:yangzhanwen@qq.com" class="btn-cta">Get Quote &#8594;</a>
         </div>
         <div class="contact-card">
           <h3 class="contact-card-title">Contact Me</h3>
@@ -343,8 +406,21 @@
     <div class="section-header fade-in">
       <h2 class="section-headline">Product Details</h2>
     </div>
-    <div class="detail-images" id="detailImages">
-      <div class="detail-img-wrap fade-in"><img src="detail/01.jpg" alt="9420 Detail 1"></div>
+    <div class="detail-images cols-1" id="detailImages">
+      <div class="detail-img-wrap fade-in"><img loading="lazy" src="detail/01.jpg" alt="9420 Detail 1"></div>
+    </div>
+    <div class="product-features fade-in">
+      <h3>Key Features</h3>
+      <ul class="feature-list">
+        <li>Double-wall vacuum insulation for long-lasting temperature retention</li>
+        <li>Ergonomic handle for comfortable, balanced pouring</li>
+        <li>Twist-and-pour stopper for controlled dispensing</li>
+        <li>304 food-grade stainless steel inner and outer walls</li>
+        <li>Wide mouth for easy filling and cleaning</li>
+        <li>Compact design suitable for home, office, and outdoor use</li>
+        <li>LFGB/FDA certified food-safe materials</li>
+        <li>OEM/ODM customization: spray painting, heat transfer, laser engraving</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -363,13 +439,7 @@
 <script>
   (function() {
     var nameText = '2.0L / 3.0L Vacuum Jug';
-    var specList = document.getElementById('specList');
-    var capacities = nameText.split(' / ');
-    capacities.forEach(function(cap) {
-      var li = document.createElement('li');
-      li.textContent = cap.trim();
-      specList.appendChild(li);
-    });
+    document.getElementById('capacityValues').textContent = nameText;
   })();
 
   (function() {
